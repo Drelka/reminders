@@ -1,0 +1,97 @@
+<!--
+    multi or single line comments - ctrl + / 
+-->
+
+<!-- 
+    VSCode toggle word wrap - Alt + Z
+    VSCode copy line - Shift + Alt + arrow
+    VSCode move line - Alt + arrow
+    VSCode add cursor - Shift + Ctrl + arrow /or/ Alt + LMB (left mouse button)
+    VSCode show options - Alt + space
+    VSCode 
+    VSCode 
+    VSCode 
+    VSCode 
+    VSCode 
+    VSCode 
+-->
+
+<p> paragraph - starts from the new line</p>
+
+<h1> the biggest heading should always be used for the heading of the overall page </h1>
+
+<h6> smallest heading </h6>
+
+
+***     ***     ***     ***     ***     ***
+
+
+<strong> text in bold </strong>
+
+<em> text in italic - "emphasized" </em>
+
+<!-- <strong> and <em> elements should be used instead of <b> and <i> for accessability, as <b> and <i> have no meaning just like big font text compared to <h1>, or any other heading, same look != same meaning-->
+        
+<!--
+    relationships: 
+    body = parent of p&p
+    p&p = children of body and siblings of each other 
+-->
+<body>
+    <p>child</p>
+    <p>child</p> 
+</body>
+
+<!-- 
+    <ol> organized list
+    <ul> unorganized list
+        <li> list item
+
+    Do not use "type" attribute, as it has been deprecated; use the CSS "list-style-type" property instead.
+-->
+        
+<!-- below list will start from no 4, then go for 5 fot the 1nd item, 3rd item value is set to 10, so 4th will be equal 11
+    *you can also use <ol reverse> to reverse numbers (high to low)-->
+<ol start="4">
+    <li>brush the teeth</li>
+    <li>wash the dishes</li>
+    <li value="10">eat a hamburger</li>
+    <li>do homework</li>
+</ol>
+
+<!-- we can nest ol's and ul's as we want -->
+<ul>shopping:
+    <li>
+        eggs
+            <ol>
+                <li>chicken</li>
+                <li>duck</li>
+                <li>ostrich</li>
+            </ol>
+    </li>
+    <li>
+        bread
+        <ol>
+            <li>full grain</li>
+            <li>white</li>
+            <li>sordough</li>
+            <li>
+                german dark
+                <ul>
+                    <li>sliced</li>
+                    <li>whole</li>
+                </ul>
+            </li>
+        </ol>
+    </li>
+    <li>
+        olives
+        <ol>
+            <li>green</li>
+            <li>black</li>
+        </ol>
+    </li>
+</ul>
+
+<!--mor about lists - https://learn.shayhowe.com/html-css/creating-lists/ -->
+
