@@ -136,3 +136,35 @@ main 4 formats of images you should use on the web:
     -.png (icons, technical diagrams, logos)
     -.svg (Scalable Vector Graphics) (don't use at the begging as you may encounter issues)
 -->
+
+*GIT Commit Message ( https://cbea.ms/git-commit/ )
+
+1. Separate subject from body with a blank line
+    -first line is treated as a title, also for the Git e-mails
+2. Limit the subject line to 50 characters (rule of thumb)
+    -50 is a good rule, but 72 should be absolute max
+    -any subject line longer than 72 characters will be trunncated by GitHub
+3. Capitalize the subject line
+    -always start the subject line with a capital letter
+4. Do not end the subject line with a period
+    -space is precious, no periods
+5. Use the imperative mood in the subject line
+    -"spoken or written as giving a command or instruction"
+    -Git itself uses the imperative whenever it creates a commit on your behalf
+    -a properly formed Git commit subject line should always be able to complete the following sentence:
+    
+        If applied, this commit will 'your subject line here'
+
+        examples:                    'Refactor ubsystem X for readability'
+                                     'update getting started documentation'
+                                     'remove deprecated methods'
+                                     'release version 1.0.0'
+                                     'merge pull request #123 from user/branch'
+
+6. Wrap the body at 72 characters
+    -wrap means "start new line" after 72 characters (generally under 80 per line)
+    -can use multiple lines in nthe body
+7. Use the body to explain what and why vs. how
+    -focus on making clear the reasons why you made the change in the first place—
+    the way things worked before the change (and what was wrong with that), the way they
+    work now, and why you decided to solve it the way you did
