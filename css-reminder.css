@@ -1,0 +1,101 @@
+/* SELECTORS
+
+    *               - wildcard, the universal selector, selects ALL ELEMENTS
+
+    div
+    input
+    (etc.)          - are type selectors and select all elements of the given node name;
+                     in this example all <div>, or all <input> elements
+
+    .className      - selects all elements that have the given class
+
+    #someId         - there should be only one element with the given id in the document, but if there is more than one,
+                      the ID selector will match all elements with that id
+
+    p.myClass#myId  - type selector (paragraph) combined with class selector (.myClass) and id selector (#myId)
+
+*/
+
+__________________________________________________________________________________________________________________________    
+/* BOX MODEL
+
+
+    1- content box = content (only)
+    2- padding box = content + padding
+    3- border box  = content + padding + border
+    4- margin box  = content + padding + border + margin 
+
+*/
+
+__________________________________________________________________________________________________________________________    
+/* BOX SIZING */
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: content-box; /* read below */
+    }
+    .container {
+        border: 2px, dashed, red;
+        width: 400px;
+        padding: 1.5rem;
+    }
+
+    /*
+        1) content-box is a default where "width: 400px" is a content-box width (with no margin/border included)
+        2) border-box (also called the alternative) is taking into account content, padding and border
+            (so all together are 400px)
+    */
+
+        
+__________________________________________________________________________________________________________________________
+/* DISPLAY */
+
+    .displayTypes{
+        display: block;         /* will break onto a new line; 
+                                   width/height respected;
+                                   if width not spec. it will stretch up to 100%;
+                                   paddin/margin/border will push away content from the box
+                                   some of the properties can apply to inline boxes too, such as those created by a <span> element */
+    
+        display: inline;         /* one line only;
+                                    width/height N/A;
+                                    top/bottom pad./marg./bord. apply, but don't affect the content;
+                                    left/right p/m/b apply and will affect the box content */
+
+        display: inline-block;   /* middle ground between inline and block
+                                    one line like 'inline' type
+                                    doesn't overlap like <span> inside inline
+                                    P/M/B will move other elements away from the box */
+    }
+
+/* FLEXBOX
+    -vertical centering of content inside the parent
+    - equal amount of width/height given to all the children of a container
+    - in columns: different amount of content, but the same height */
+
+/* GRID
+    - collection of horizontal and vertical lines, used to lay on designed elements creating web page's layout
+    - consistency */
+
+__________________________________________________________________________________________________________________________
+/* ASPECT RATIO */
+
+    .box{
+        background-color: red;
+        aspect-ratio: 1 / 1; /* scaling 1/1 with width; can use 16/9 for vdieos/thumbnails;
+                                aspect-ratio also scales with height */
+        width: 30%;          /* box has 30% of the page's width */
+
+     /* flex-grow: 1;           use instead of "width" - scale to the size of the container */
+
+     /* height: 100px;          fixed height */
+    }
+    
+    .boxes{
+        display: flex;
+        gap: .5rem;
+    }
+
+
+__________________________________________________________________________________________________________________________
